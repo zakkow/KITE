@@ -1,5 +1,7 @@
 # KITE (Keyboard Intelligence & Motor Adaptation)
 
+**Creator / Contact:** Zakaria Uddin ([zakariauddin07@gmail.com](mailto:zakariauddin07@gmail.com))
+
 KITE is an intelligent, motor-adaptive custom iOS keyboard built specifically to eliminate physical and software typing friction for individuals with motor impairments (such as Parkinson's essential tremor, cerebral palsy, or atypical physical touch scatter). Rather than forcing users to adapt their hands to rigid software key targets, **KITE adapts software key targets to the user's hands**.
 
 ## Core Philosophy & Architecture
@@ -66,6 +68,6 @@ To ensure absolute privacy and security, KITE is not downloaded from the App Sto
 **6. Enable the Keyboard**
 - Once the KITE app opens on your phone, go to your iPhone's `Settings` > `General` > `Keyboard` > `Keyboards`.
 - Tap **Add New Keyboard...** and select **KITE**.
-- Tap **KITE** again in the list and toggle **Allow Full Access**. *(Note: iOS shows a scary warning here by default for all custom keyboards. Rest assured, because you compiled this yourself, you know exactly where your data is going—nowhere).*
+- Tap **KITE** again in the list and toggle **Allow Full Access**. *(Note: This is strictly required so the keyboard extension can communicate with the main KITE container app to save your motor profiles via the secure App Group Sandbox. iOS shows a scary warning here by default for all custom keyboards, but because you compiled this yourself, you know exactly where your data is going—nowhere).*
 
 You are now ready to type with KITE! Open any text field, tap the globe icon 🌐 on your keyboard to switch to KITE, and let it learn your hands.
