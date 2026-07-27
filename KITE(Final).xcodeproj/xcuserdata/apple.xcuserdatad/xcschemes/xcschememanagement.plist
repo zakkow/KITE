@@ -7,12 +7,40 @@
 		<key>KITE(Final).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>KITE(Final)UITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>KITEWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>custom keyboard.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>18C9514A2FFCD1C60008F485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18C951632FFCD1C70008F485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18C9517A2FFCD2D20008F485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

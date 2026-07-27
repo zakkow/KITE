@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct KITE_Final_App: App {
+    @AppStorage("appearanceMode") private var appearanceModeRaw: String = AppearanceMode.system.rawValue
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -23,9 +25,16 @@ struct KITE_Final_App: App {
         }
     }()
 
+    init() {
+        if ProcessInfo.processInfo.arguments.contains("-uiTestSkipOnboarding") {
+            UserDefaults.standard.set(true, forKey: "onboardingComplete")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(AppearanceMode(rawValue: appearanceModeRaw)?.colorScheme)
         }
         .modelContainer(sharedModelContainer)
     }

@@ -7,10 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1812C8A82FFDE6F500E1549A /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8A32FFDE6F500E1549A /* SharedStore.swift */; };
+		1812C8B52FFDE7EA00E1549A /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8AA2FFDE7EA00E1549A /* SessionData.swift */; };
+		1812C8B62FFDE7EA00E1549A /* KeyOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */; };
+		1812C8B72FFDE7EA00E1549A /* TapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8AB2FFDE7EA00E1549A /* TapEvent.swift */; };
+		1812C8BC2FFDEA2D00E1549A /* MotorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */; };
+		1812C8D42FFEBC4900E1549A /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D22FFEBC4900E1549A /* PreferencesStore.swift */; };
+		1812C8D52FFEBC4900E1549A /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D32FFEBC4900E1549A /* UserPreferences.swift */; };
+		182A74633008C53600D1A9C8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182A74623008C53600D1A9C8 /* WidgetKit.framework */; };
+		182A74653008C53600D1A9C8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182A74643008C53600D1A9C8 /* SwiftUI.framework */; };
+		182A74743008C53700D1A9C8 /* KITEWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 182A74603008C53600D1A9C8 /* KITEWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		182A74F230096B0400D1A9C8 /* HandSideMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74DD3009616500D1A9C8 /* HandSideMapping.swift */; };
+		182A74F330096B0400D1A9C8 /* ProfileSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74C7300944EB00D1A9C8 /* ProfileSnapshot.swift */; };
+		182A74F430096B1000D1A9C8 /* HandSideMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74DD3009616500D1A9C8 /* HandSideMapping.swift */; };
+		182A750330096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FF30096ECF00D1A9C8 /* ManualCorrectionRule.swift */; };
+		182A750430096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750130096ECF00D1A9C8 /* SessionHistoryStore.swift */; };
+		182A750830096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FD30096ECF00D1A9C8 /* ExplainabilityLogEntry.swift */; };
+		182A750A30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FC30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift */; };
+		182A750B30096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FF30096ECF00D1A9C8 /* ManualCorrectionRule.swift */; };
+		182A750C30096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750130096ECF00D1A9C8 /* SessionHistoryStore.swift */; };
+		182A750D30096ECF00D1A9C8 /* TremorFrequencyEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750230096ECF00D1A9C8 /* TremorFrequencyEstimator.swift */; };
+		182A750F30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FB30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift */; };
+		182A751030096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FD30096ECF00D1A9C8 /* ExplainabilityLogEntry.swift */; };
+		182A751130096ECF00D1A9C8 /* ProfileSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750030096ECF00D1A9C8 /* ProfileSnapshot.swift */; };
+		182A751230096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FC30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift */; };
+		182A751330096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FF30096ECF00D1A9C8 /* ManualCorrectionRule.swift */; };
+		182A751430096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750130096ECF00D1A9C8 /* SessionHistoryStore.swift */; };
+		182A751530096ECF00D1A9C8 /* TremorFrequencyEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750230096ECF00D1A9C8 /* TremorFrequencyEstimator.swift */; };
+		182A751630096ECF00D1A9C8 /* HandSideMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FE30096ECF00D1A9C8 /* HandSideMapping.swift */; };
+		182A751730096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FB30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift */; };
+		182A751830096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FD30096ECF00D1A9C8 /* ExplainabilityLogEntry.swift */; };
+		182A751930096ECF00D1A9C8 /* ProfileSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750030096ECF00D1A9C8 /* ProfileSnapshot.swift */; };
+		182A751A30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FC30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift */; };
+		182A751C3009736B00D1A9C8 /* KeyOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */; };
+		182A751D300973D400D1A9C8 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D32FFEBC4900E1549A /* UserPreferences.swift */; };
+		182A751E300973E100D1A9C8 /* MotorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */; };
+		182A751F300973EC00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A74FB30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift */; };
+		182A752D3009756D00D1A9C8 /* KeyOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */; };
+		182A752E3009764500D1A9C8 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D22FFEBC4900E1549A /* PreferencesStore.swift */; };
+		182A752F3009767600D1A9C8 /* KeyOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */; };
+		182A7530300976B200D1A9C8 /* MotorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */; };
+		182A7531300976BA00D1A9C8 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D32FFEBC4900E1549A /* UserPreferences.swift */; };
+		182A75323009777800D1A9C8 /* MotorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */; };
+		182A75333009778200D1A9C8 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D22FFEBC4900E1549A /* PreferencesStore.swift */; };
+		182A7534300977BB00D1A9C8 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8D32FFEBC4900E1549A /* UserPreferences.swift */; };
+		182A7540300C76B600D1A9C8 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8AA2FFDE7EA00E1549A /* SessionData.swift */; };
+		182A7541300C76E100D1A9C8 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8AA2FFDE7EA00E1549A /* SessionData.swift */; };
+		182A7542300C76FA00D1A9C8 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C8AA2FFDE7EA00E1549A /* SessionData.swift */; };
+		182A755B300FDBA600D1A9C8 /* ProfileSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A750030096ECF00D1A9C8 /* ProfileSnapshot.swift */; };
+		182A756830103AA900D1A9C8 /* CommonWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A756630103AA900D1A9C8 /* CommonWordList.swift */; };
+		182A756930103AA900D1A9C8 /* LinguisticPlausibilityGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A756730103AA900D1A9C8 /* LinguisticPlausibilityGate.swift */; };
+		182A756A30103AA900D1A9C8 /* CommonWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A756630103AA900D1A9C8 /* CommonWordList.swift */; };
+		182A756B30103AA900D1A9C8 /* LinguisticPlausibilityGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A756730103AA900D1A9C8 /* LinguisticPlausibilityGate.swift */; };
 		18C951822FFCD2D20008F485 /* custom keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 18C9517B2FFCD2D20008F485 /* custom keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		182A74723008C53700D1A9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C951432FFCD1C60008F485 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182A745F3008C53600D1A9C8;
+			remoteInfo = KITEWidgetExtension;
+		};
 		18C9515B2FFCD1C70008F485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18C951432FFCD1C60008F485 /* Project object */;
@@ -42,6 +101,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				18C951822FFCD2D20008F485 /* custom keyboard.appex in Embed Foundation Extensions */,
+				182A74743008C53700D1A9C8 /* KITEWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +109,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1812C8A32FFDE6F500E1549A /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyOffset.swift; sourceTree = "<group>"; };
+		1812C8AA2FFDE7EA00E1549A /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
+		1812C8AB2FFDE7EA00E1549A /* TapEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapEvent.swift; sourceTree = "<group>"; };
+		1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorProfile.swift; sourceTree = "<group>"; };
+		1812C8D22FFEBC4900E1549A /* PreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStore.swift; sourceTree = "<group>"; };
+		1812C8D32FFEBC4900E1549A /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		182A74603008C53600D1A9C8 /* KITEWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KITEWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		182A74623008C53600D1A9C8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		182A74643008C53600D1A9C8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		182A74793008C5AE00D1A9C8 /* KITEWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KITEWidgetExtension.entitlements; sourceTree = "<group>"; };
+		182A74C7300944EB00D1A9C8 /* ProfileSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileSnapshot.swift; path = Shared/ProfileSnapshot.swift; sourceTree = "<group>"; };
+		182A74DD3009616500D1A9C8 /* HandSideMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HandSideMapping.swift; path = Shared/HandSideMapping.swift; sourceTree = "<group>"; };
+		182A74F630096BAC00D1A9C8 /* ProfileSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileSnapshot.swift; path = Shared/ProfileSnapshot.swift; sourceTree = "<group>"; };
+		182A74F730096BAC00D1A9C8 /* HandSideMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HandSideMapping.swift; path = Shared/HandSideMapping.swift; sourceTree = "<group>"; };
+		182A74FB30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusionPairAnalyzer.swift; sourceTree = "<group>"; };
+		182A74FC30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentialPrivacyPreview.swift; sourceTree = "<group>"; };
+		182A74FD30096ECF00D1A9C8 /* ExplainabilityLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainabilityLogEntry.swift; sourceTree = "<group>"; };
+		182A74FE30096ECF00D1A9C8 /* HandSideMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSideMapping.swift; sourceTree = "<group>"; };
+		182A74FF30096ECF00D1A9C8 /* ManualCorrectionRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualCorrectionRule.swift; sourceTree = "<group>"; };
+		182A750030096ECF00D1A9C8 /* ProfileSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSnapshot.swift; sourceTree = "<group>"; };
+		182A750130096ECF00D1A9C8 /* SessionHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryStore.swift; sourceTree = "<group>"; };
+		182A750230096ECF00D1A9C8 /* TremorFrequencyEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorFrequencyEstimator.swift; sourceTree = "<group>"; };
+		182A756630103AA900D1A9C8 /* CommonWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWordList.swift; sourceTree = "<group>"; };
+		182A756730103AA900D1A9C8 /* LinguisticPlausibilityGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguisticPlausibilityGate.swift; sourceTree = "<group>"; };
 		18C9514B2FFCD1C60008F485 /* KITE(Final).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KITE(Final).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9515A2FFCD1C70008F485 /* KITE(Final)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KITE(Final)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C951642FFCD1C70008F485 /* KITE(Final)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KITE(Final)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,18 +141,107 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		182A74783008C53700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITEWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				SessionHistoryStore.swift,
+			);
+			target = 182A745F3008C53600D1A9C8 /* KITEWidgetExtension */;
+		};
+		182A748830093F1E00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ManualCorrectionRule.swift,
+			);
+			target = 18C951592FFCD1C70008F485 /* KITE(Final)Tests */;
+		};
+		182A748930093F1E00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)UITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ExplainabilityLogEntry.swift,
+				ManualCorrectionRule.swift,
+			);
+			target = 18C951632FFCD1C70008F485 /* KITE(Final)UITests */;
+		};
+		182A74B1300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITE(Final)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SharedStore.swift,
+				TapEvent.swift,
+			);
+			target = 18C9514A2FFCD1C60008F485 /* KITE(Final) */;
+		};
+		182A74B3300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITE(Final)UITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SessionHistoryStore.swift,
+			);
+			target = 18C951632FFCD1C70008F485 /* KITE(Final)UITests */;
+		};
+		182A74B4300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "custom keyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SharedStore.swift,
+				TapEvent.swift,
+			);
+			target = 18C9517A2FFCD2D20008F485 /* custom keyboard */;
+		};
+		182A751B30096FCA00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ExplainabilityLogEntry.swift,
+				ManualCorrectionRule.swift,
+				TremorFrequencyEstimator.swift,
+			);
+			target = 18C9514A2FFCD1C60008F485 /* KITE(Final) */;
+		};
+		182A753930097D8000D1A9C8 /* Exceptions for "custom keyboard" folder in "KITE(Final)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CorrectionEngine.swift,
+				KeyboardCoreView.swift,
+				SharedColorUtils.swift,
+			);
+			target = 18C9514A2FFCD1C60008F485 /* KITE(Final) */;
+		};
+		182A79203011279200D1A9C8 /* Exceptions for "KITE(Final)" folder in "custom keyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KITEAmber.swift,
+			);
+			target = 18C9517A2FFCD2D20008F485 /* custom keyboard */;
+		};
 		18C951832FFCD2D20008F485 /* Exceptions for "custom keyboard" folder in "custom keyboard" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				PreferencesStore.swift,
 			);
 			target = 18C9517A2FFCD2D20008F485 /* custom keyboard */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		182A74663008C53600D1A9C8 /* KITEWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				182A74B1300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITE(Final)" target */,
+				182A74B3300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITE(Final)UITests" target */,
+				182A74B4300942C700D1A9C8 /* Exceptions for "KITEWidget" folder in "custom keyboard" target */,
+				182A74783008C53700D1A9C8 /* Exceptions for "KITEWidget" folder in "KITEWidgetExtension" target */,
+			);
+			path = KITEWidget;
+			sourceTree = "<group>";
+		};
 		18C9514D2FFCD1C60008F485 /* KITE(Final) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				182A751B30096FCA00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)" target */,
+				182A748830093F1E00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)Tests" target */,
+				182A748930093F1E00D1A9C8 /* Exceptions for "KITE(Final)" folder in "KITE(Final)UITests" target */,
+				182A79203011279200D1A9C8 /* Exceptions for "KITE(Final)" folder in "custom keyboard" target */,
+			);
 			path = "KITE(Final)";
 			sourceTree = "<group>";
 		};
@@ -84,6 +258,7 @@
 		18C9517C2FFCD2D20008F485 /* custom keyboard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				182A753930097D8000D1A9C8 /* Exceptions for "custom keyboard" folder in "KITE(Final)" target */,
 				18C951832FFCD2D20008F485 /* Exceptions for "custom keyboard" folder in "custom keyboard" target */,
 			);
 			path = "custom keyboard";
@@ -92,6 +267,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		182A745D3008C53600D1A9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182A74653008C53600D1A9C8 /* SwiftUI.framework in Frameworks */,
+				182A74633008C53600D1A9C8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C951482FFCD1C60008F485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,13 +307,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1812C8A42FFDE6F500E1549A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				182A756630103AA900D1A9C8 /* CommonWordList.swift */,
+				182A756730103AA900D1A9C8 /* LinguisticPlausibilityGate.swift */,
+				182A74FB30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift */,
+				182A74FC30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift */,
+				182A74FD30096ECF00D1A9C8 /* ExplainabilityLogEntry.swift */,
+				182A74FE30096ECF00D1A9C8 /* HandSideMapping.swift */,
+				182A74FF30096ECF00D1A9C8 /* ManualCorrectionRule.swift */,
+				182A750030096ECF00D1A9C8 /* ProfileSnapshot.swift */,
+				182A750130096ECF00D1A9C8 /* SessionHistoryStore.swift */,
+				182A750230096ECF00D1A9C8 /* TremorFrequencyEstimator.swift */,
+				1812C8D22FFEBC4900E1549A /* PreferencesStore.swift */,
+				1812C8D32FFEBC4900E1549A /* UserPreferences.swift */,
+				1812C8B82FFDEA2D00E1549A /* MotorProfile.swift */,
+				1812C8A92FFDE7EA00E1549A /* KeyOffset.swift */,
+				1812C8AA2FFDE7EA00E1549A /* SessionData.swift */,
+				1812C8AB2FFDE7EA00E1549A /* TapEvent.swift */,
+				1812C8A32FFDE6F500E1549A /* SharedStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		182A74613008C53600D1A9C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182A74623008C53600D1A9C8 /* WidgetKit.framework */,
+				182A74643008C53600D1A9C8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18C951422FFCD1C60008F485 = {
 			isa = PBXGroup;
 			children = (
+				182A74F730096BAC00D1A9C8 /* HandSideMapping.swift */,
+				182A74F630096BAC00D1A9C8 /* ProfileSnapshot.swift */,
+				182A74DD3009616500D1A9C8 /* HandSideMapping.swift */,
+				182A74C7300944EB00D1A9C8 /* ProfileSnapshot.swift */,
+				182A74793008C5AE00D1A9C8 /* KITEWidgetExtension.entitlements */,
+				1812C8A42FFDE6F500E1549A /* Shared */,
 				18C9514D2FFCD1C60008F485 /* KITE(Final) */,
 				18C9515D2FFCD1C70008F485 /* KITE(Final)Tests */,
 				18C951672FFCD1C70008F485 /* KITE(Final)UITests */,
 				18C9517C2FFCD2D20008F485 /* custom keyboard */,
+				182A74663008C53600D1A9C8 /* KITEWidget */,
+				182A74613008C53600D1A9C8 /* Frameworks */,
 				18C9514C2FFCD1C60008F485 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +366,7 @@
 				18C9515A2FFCD1C70008F485 /* KITE(Final)Tests.xctest */,
 				18C951642FFCD1C70008F485 /* KITE(Final)UITests.xctest */,
 				18C9517B2FFCD2D20008F485 /* custom keyboard.appex */,
+				182A74603008C53600D1A9C8 /* KITEWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +374,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		182A745F3008C53600D1A9C8 /* KITEWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182A74753008C53700D1A9C8 /* Build configuration list for PBXNativeTarget "KITEWidgetExtension" */;
+			buildPhases = (
+				182A745C3008C53600D1A9C8 /* Sources */,
+				182A745D3008C53600D1A9C8 /* Frameworks */,
+				182A745E3008C53600D1A9C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				182A74663008C53600D1A9C8 /* KITEWidget */,
+			);
+			name = KITEWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = KITEWidgetExtension;
+			productReference = 182A74603008C53600D1A9C8 /* KITEWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		18C9514A2FFCD1C60008F485 /* KITE(Final) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C9516E2FFCD1C70008F485 /* Build configuration list for PBXNativeTarget "KITE(Final)" */;
@@ -161,6 +409,7 @@
 			);
 			dependencies = (
 				18C951812FFCD2D20008F485 /* PBXTargetDependency */,
+				182A74733008C53700D1A9C8 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				18C9514D2FFCD1C60008F485 /* KITE(Final) */,
@@ -225,6 +474,7 @@
 				18C951772FFCD2D20008F485 /* Sources */,
 				18C951782FFCD2D20008F485 /* Frameworks */,
 				18C951792FFCD2D20008F485 /* Resources */,
+				182A753B300ADAE800D1A9C8 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -250,6 +500,9 @@
 				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 2640;
 				TargetAttributes = {
+					182A745F3008C53600D1A9C8 = {
+						CreatedOnToolsVersion = 26.4;
+					};
 					18C9514A2FFCD1C60008F485 = {
 						CreatedOnToolsVersion = 26.4;
 					};
@@ -284,11 +537,19 @@
 				18C951592FFCD1C70008F485 /* KITE(Final)Tests */,
 				18C951632FFCD1C70008F485 /* KITE(Final)UITests */,
 				18C9517A2FFCD2D20008F485 /* custom keyboard */,
+				182A745F3008C53600D1A9C8 /* KITEWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		182A745E3008C53600D1A9C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C951492FFCD1C60008F485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,11 +580,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		182A753B300ADAE800D1A9C8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ngrep -rn \"URLSession\\|import Network\" . && exit 1 || echo \"CLEAN: no networking code\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		182A745C3008C53600D1A9C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182A7531300976BA00D1A9C8 /* UserPreferences.swift in Sources */,
+				182A7530300976B200D1A9C8 /* MotorProfile.swift in Sources */,
+				182A752F3009767600D1A9C8 /* KeyOffset.swift in Sources */,
+				182A74F430096B1000D1A9C8 /* HandSideMapping.swift in Sources */,
+				182A750B30096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */,
+				182A750C30096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */,
+				182A750D30096ECF00D1A9C8 /* TremorFrequencyEstimator.swift in Sources */,
+				182A750F30096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */,
+				182A751030096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */,
+				182A751130096ECF00D1A9C8 /* ProfileSnapshot.swift in Sources */,
+				182A7540300C76B600D1A9C8 /* SessionData.swift in Sources */,
+				182A751230096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C951472FFCD1C60008F485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A7534300977BB00D1A9C8 /* UserPreferences.swift in Sources */,
+				182A75333009778200D1A9C8 /* PreferencesStore.swift in Sources */,
+				182A75323009777800D1A9C8 /* MotorProfile.swift in Sources */,
+				182A752D3009756D00D1A9C8 /* KeyOffset.swift in Sources */,
+				182A751330096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */,
+				182A751430096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */,
+				182A751530096ECF00D1A9C8 /* TremorFrequencyEstimator.swift in Sources */,
+				182A751630096ECF00D1A9C8 /* HandSideMapping.swift in Sources */,
+				182A751730096ECF00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */,
+				182A751830096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */,
+				182A751930096ECF00D1A9C8 /* ProfileSnapshot.swift in Sources */,
+				182A751A30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */,
+				182A7542300C76FA00D1A9C8 /* SessionData.swift in Sources */,
+				182A756A30103AA900D1A9C8 /* CommonWordList.swift in Sources */,
+				182A756B30103AA900D1A9C8 /* LinguisticPlausibilityGate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +654,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1812C8B52FFDE7EA00E1549A /* SessionData.swift in Sources */,
+				1812C8D42FFEBC4900E1549A /* PreferencesStore.swift in Sources */,
+				1812C8D52FFEBC4900E1549A /* UserPreferences.swift in Sources */,
+				1812C8B62FFDE7EA00E1549A /* KeyOffset.swift in Sources */,
+				1812C8BC2FFDEA2D00E1549A /* MotorProfile.swift in Sources */,
+				1812C8B72FFDE7EA00E1549A /* TapEvent.swift in Sources */,
+				1812C8A82FFDE6F500E1549A /* SharedStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,12 +668,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A752E3009764500D1A9C8 /* PreferencesStore.swift in Sources */,
+				182A751F300973EC00D1A9C8 /* ConfusionPairAnalyzer.swift in Sources */,
+				182A751E300973E100D1A9C8 /* MotorProfile.swift in Sources */,
+				182A751D300973D400D1A9C8 /* UserPreferences.swift in Sources */,
+				182A751C3009736B00D1A9C8 /* KeyOffset.swift in Sources */,
+				182A74F330096B0400D1A9C8 /* ProfileSnapshot.swift in Sources */,
+				182A74F230096B0400D1A9C8 /* HandSideMapping.swift in Sources */,
+				182A750330096ECF00D1A9C8 /* ManualCorrectionRule.swift in Sources */,
+				182A750430096ECF00D1A9C8 /* SessionHistoryStore.swift in Sources */,
+				182A755B300FDBA600D1A9C8 /* ProfileSnapshot.swift in Sources */,
+				182A750830096ECF00D1A9C8 /* ExplainabilityLogEntry.swift in Sources */,
+				182A750A30096ECF00D1A9C8 /* DifferentialPrivacyPreview.swift in Sources */,
+				182A756830103AA900D1A9C8 /* CommonWordList.swift in Sources */,
+				182A756930103AA900D1A9C8 /* LinguisticPlausibilityGate.swift in Sources */,
+				182A7541300C76E100D1A9C8 /* SessionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		182A74733008C53700D1A9C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182A745F3008C53600D1A9C8 /* KITEWidgetExtension */;
+			targetProxy = 182A74723008C53700D1A9C8 /* PBXContainerItemProxy */;
+		};
 		18C9515C2FFCD1C70008F485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18C9514A2FFCD1C60008F485 /* KITE(Final) */;
@@ -369,6 +712,77 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		182A74763008C53700D1A9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KITEWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4957D4PAQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KITEWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KITEWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ECC.KITE-Final-.KITEWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182A74773008C53700D1A9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KITEWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4957D4PAQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KITEWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KITEWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ECC.KITE-Final-.KITEWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		18C9516C2FFCD1C70008F485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -743,6 +1157,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		182A74753008C53700D1A9C8 /* Build configuration list for PBXNativeTarget "KITEWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182A74763008C53700D1A9C8 /* Debug */,
+				182A74773008C53700D1A9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18C951462FFCD1C60008F485 /* Build configuration list for PBXProject "KITE(Final)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
