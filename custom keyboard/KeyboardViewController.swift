@@ -573,6 +573,17 @@ class KeyboardViewController: UIInputViewController {
 
         // Contraction Auto-Formatting (e.g. dont -> don't, im -> I'm)
         let lowerWord = insertedWordBuffer.lowercased()
+        
+        // Isolated Dropped-Tap Fixes (e.g., "o" -> "to")
+        if insertedWordBuffer.count == 1 {
+            if let fix = CommonWordList.isolatedDroppedTapFixes[lowerWord] {
+                let formatted = matchCase(text: fix, template: insertedWordBuffer)
+                textDocumentProxy.deleteBackward()
+                textDocumentProxy.insertText(formatted)
+                insertedWordBuffer = formatted
+            }
+        }
+        
         if let contraction = CommonWordList.contractions[lowerWord] {
             let formatted = matchCase(text: contraction, template: insertedWordBuffer)
             for _ in 0..<insertedWordBuffer.count {

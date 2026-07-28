@@ -54,6 +54,16 @@ enum CommonWordList {
         "couldnt": "couldn't", "shouldnt": "shouldn't", "wouldnt": "wouldn't",
         "thats": "that's", "whats": "what's", "theres": "there's", "lets": "let's"
     ]
+    
+    static let isolatedDroppedTapFixes: [String: String] = [
+        "o": "to",
+        "b": "be",
+        "u": "you",
+        "w": "we",
+        "m": "me",
+        "r": "are",
+        "y": "why"
+    ]
 
     static func hasWordWithPrefix(_ prefix: String) -> Bool {
         let lower = prefix.lowercased()
