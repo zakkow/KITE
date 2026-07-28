@@ -63,6 +63,8 @@ class KeyboardViewController: UIInputViewController {
     private var lastDeletedWord: String?
     private var lastDeletedWordContext: String?
     private var isDeletingWord = false
+    private var disabledDroppedTapFixes: Set<String> = []
+    private var lastDroppedTapFix: (raw: String, formatted: String, timestamp: TimeInterval)? = nil
 
     private func wordSoFarBeforeCurrentTap() -> String {
         guard let context = textDocumentProxy.documentContextBeforeInput else { return "" }
@@ -575,11 +577,14 @@ class KeyboardViewController: UIInputViewController {
         let lowerWord = insertedWordBuffer.lowercased()
         
         // Isolated Dropped-Tap Fixes (e.g., "o" -> "to")
-        if insertedWordBuffer.count == 1 {
+        if insertedWordBuffer.count == 1 && !disabledDroppedTapFixes.contains(lowerWord) {
             if let fix = CommonWordList.isolatedDroppedTapFixes[lowerWord] {
                 let formatted = matchCase(text: fix, template: insertedWordBuffer)
                 textDocumentProxy.deleteBackward()
                 textDocumentProxy.insertText(formatted)
+                
+                lastDroppedTapFix = (raw: insertedWordBuffer, formatted: formatted, timestamp: Date().timeIntervalSince1970)
+                
                 insertedWordBuffer = formatted
             }
         }
@@ -692,6 +697,17 @@ class KeyboardViewController: UIInputViewController {
         switch key {
         case "⌫":
             let now = Date().timeIntervalSince1970
+            if let fix = lastDroppedTapFix, now - fix.timestamp < 3.0 {
+                textDocumentProxy.deleteBackward()
+                for _ in 0..<fix.formatted.count {
+                    textDocumentProxy.deleteBackward()
+                }
+                textDocumentProxy.insertText(fix.raw)
+                disabledDroppedTapFixes.insert(fix.raw.lowercased())
+                lastDroppedTapFix = nil
+                return
+            }
+            
             if now - lastBackspaceTimestamp < 0.50, lastCorrection != nil {
                 undoLastCorrection()
                 lastBackspaceTimestamp = 0
